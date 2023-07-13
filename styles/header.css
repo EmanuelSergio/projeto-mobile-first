@@ -7,6 +7,7 @@ display: inline-block;
 background-repeat: no-repeat;
 background-position: center;
 
+
 }
 
 .cabecalho{
@@ -15,6 +16,7 @@ background-color: var(--branco);
 display: flex;
 justify-content: space-between;
 align-items: center;
+position: relative; /*libere opção de botar outros atributos: top, bottom...*/
 
 }
 
@@ -29,4 +31,14 @@ align-items: center;
 .container__imagem{
 
     padding: 1em;
+}
+
+.lista-menu{
+    display: none; /*deixa o item transparente*/
+    position: absolute; /*quero que se movimente conforme o cabeçalho*/
+    top: 100%;
+}
+
+.container__botao:checked ~ .lista-menu{ /*função checked: faz com que veja se esta preenchido o cheeckbox*/
+    display: block;
 }
