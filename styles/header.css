@@ -36,9 +36,40 @@ align-items: center;
 .lista-menu{
     display: none; /*deixa o item transparente*/
     position: absolute; /*quero que se movimente conforme o cabeçalho*/
-    top: 100%;
+    top: 100%; /* o topo deste elemento deve estar 100% depois do cabeçalho.*/
+    width: 60vw;
+    
 }
 
 .container__botao:checked ~ .lista-menu{ /*função checked: faz com que veja se esta preenchido o cheeckbox*/
     display: block;
 }
+
+.lista-menu__titulo, .lista-menu__item{
+
+    padding: 1em;
+    background-color: var(--branco);
+
+}
+
+.lista-menu__titulo{
+    color: var(--laranja);
+    
+    font-weight: 700;
+}
+
+.lista-menu__links{
+    background: var(--azul-degrade);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-transform: uppercase;
+
+
+}
+
+.container__botao{
+    display: none;
+}
+
+
