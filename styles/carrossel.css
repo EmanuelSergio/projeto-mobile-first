@@ -22,3 +22,73 @@ display: none;
     position: initial;
     margin: .5em .3em
 }
+
+.card__descricao{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}    
+
+.card__botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes{
+    display: flex;
+    
+}
+
+.card{
+    border-radius: 10px;
+    background: var(--branco);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 1em;
+    padding: 1em;
+}
+
+.descricao__titulo{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--laranja);
+}
+
+.descricao__titulo-livro{
+    color: var(--azul);
+font-size: 18px;
+font-weight: 700;
+margin: 0.5em 0;
+
+}
+
+.descricao__texto{
+    font-size: 14px;
+}
+
+.botoes__item{
+    margin: 0 0.5em;
+}
+
+.botoes__ancora{
+
+    color: var(--branco);
+    background-color: var(--laranja);
+    font-weight: 700;
+    padding: 1em 2.2em;
+    text-decoration: none;
+    font-size: 16px;
+
+
+}
+
+.desc{
+
+padding: 1.5em 0.5em;
+margin: 0;
+}
+
+.desc__img{
+
+padding: .5em 0em; ;
+
+}
