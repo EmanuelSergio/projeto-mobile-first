@@ -1,0 +1,42 @@
+.contato{
+    background: var(--branco);
+    padding: 1em;
+}
+
+.contato__titulo, .contato__texto, .contato__email{
+
+    background: var(--azul-degrade);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;/* esse mode de colocar cor é devido a sua tag, que é um h2*/
+    
+
+}
+
+.contato__titulo{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contato__texto{
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.contato__email{
+
+padding: 1em;
+border: 1px solid var(--azul);
+border-radius: 24px;
+width: 90%;
+font-weight: 400;
+
+}
+
+.contato__email::placeholder{
+    color: var(--azul);
+    font-family: var(--fonte-principal);
+    background-image: url("/img/carta.svg");
+    background-repeat: no-repeat;
+    padding-left: 2em;
+}
